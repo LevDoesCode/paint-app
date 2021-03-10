@@ -1,0 +1,37 @@
+:root {
+    --icon-width: 50px;
+    --icon-height: 50px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tool-list {
+    
+    display: flex;
+}
+
+.tool {
+    width: 75px;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.tool-icon {
+    width: var(--icon-width);
+    height: var(--icon-height);
+    cursor: pointer;
+}
+
+.selected-tool {
+    background-color: rgb(128, 182, 243);
+}
